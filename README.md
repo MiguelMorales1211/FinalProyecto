@@ -9,7 +9,7 @@
 - CSS
 - JavaScript
 
-Vista resitro: 
+Vista registro: 
 > En esta vista podemos hacer el registro de un nuevo producto a nuestro array, en caso de no llenar todos
 > los campos del registro le solicitara que los llene para poder continuar, uno de los datos del nuevo
 > producto es el codigo, el cual debe contener ciertas caracteristicas, y en caso de no cumplir con las
