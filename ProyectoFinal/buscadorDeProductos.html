@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtro de Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Filtrar Productos</h1>
+        <button onclick="volverAtras()">Volver</button>
+    </header>
+
+    <div class="filtros">
+        <select id="categoria">
+            <option value="">Seleccionar Categoría</option>
+            <option value="Hombre">Hombre</option>
+            <option value="Mujer">Mujer</option>
+            <option value="Niño">Niño</option>
+            <option value="Deportivo">Deportivo</option>
+            <option value="Acesorios">Accesorios</option>
+            
+            
+        </select>
+        <select id="color">
+            <option value="">Seleccionar Color</option>
+            <option value="azul">Azul</option>
+            <option value="rojo">Rojo</option>
+            <option value="verde">Verde</option>
+            <option value="negro">Negro</option>
+            <option value="blanco">Blanco</option>
+        </select>
+        <select id="talla">
+            <option value="">Seleccionar Talla</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+        </select>
+        <button onclick="filtrarProductos()">Filtrar</button>
+        <button onclick="limpiarFiltros()">Limpiar</button>
+    </div>
+
+    <main>
+        <table id="tablaProductos">
+            <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Categoría</th>
+                    <th>Precio</th>
+                    <th>Código</th>
+                    <th>Color</th>
+                    <th>Talla</th>
+                    <th>Material</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+        <div class="paginacion">
+            <button id="anteriorPagina">Anterior</button>
+            <span id="paginaActual2">Página 1</span>
+            <button id="siguientePagina">Siguiente</button>
+        </div>
+    </main>
+
+    <script src="Filtro.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legendary</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img
+            src="/img/LogoLegendary.jpg"
+            alt="Logo"
+          />
+        </div>
+  
+        <nav>
+          <ul>
+            <li> <a href="registro.html">Acerca de</a></li>
+            <li> <a href="buscadorDeProductos.html">Buscar Productos</a></li>
+            
+          </ul>
+        </nav>
+      </header>
+
+    <section class="intro">
+        <p>✨Sumérgete en el mundo de la moda con Legendary, una tienda de ropa ubicada en el encantador barrio Villa Colombia de Cali desde el año 2020. te invitamos a descubrir una experiencia de compra excepcional. Nos enorgullece ofrecer no solo prendas de calidad insuperable, sino también un servicio personalizado que te hará sentir único.✨</p>
+        
+    </section>
+    
+
+    <main>
+        <form id="registroForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escriba el nombre del producto">
+            
+            <label for="categoria">Categoría:</label>
+            <select id="categoria" name="categoria">
+                <option value="" hidden selected>Selecione una categoria</option>
+                <option value="Hombre">Hombre</option>
+                <option value="Mujer">Mujer</option>
+                <option value="Niños">Niños</option>
+                <option value="Deportivo">Deportivo</option>
+                <option value="Acesorios">Acesorios</option>
+                
+            </select>
+            
+            <label for="imagen">Imagen:</label>
+            <select id="imagen" name="imagen">
+                <option value="" hidden selected>Selecione una imagen</option>
+                <option value="/ImagenHombre1.jpg">Imagen Hombre 1</option>
+                <option value="/ImagenHombre2.jpg">Imagen Hombre 2</option>
+                <option value="/ImagenMujer1.jpg">Imagen Mujer 1</option>
+                <option value="/ImagenMujer2.jpg">Imagen Mujer 2</option>
+                <option value="/ImagenNiños1.jpg">Imagen Niños 1</option>
+                <option value="/ImagenNiños2.jpg">Imagen Niños 2</option>
+                <option value="/ImagenDeportivo1.jpg">Imagen Deportivo 1</option>
+                <option value="/ImagenDeportivo2.jpg">Imagen Deportivo 2</option>
+                <option value="/ImagenAcesorios1.jpg">Imagen Acesorios 1</option>
+                <option value="/ImagenAcesorios2.jpg">Imagen Acesorios 2</option>
+                
+            </select>
+            
+            <label for="codigo">Código:</label>
+            <input type="text" id="codigo" name="codigo" placeholder="Escriba el codigo del producto">
+            
+            <label for="precio">Precio:</label>
+            <input type="text" id="precio" name="precio" step="0.001" placeholder="Escriba el precio del producto">
+            
+            <label for="color">Color:</label>
+            <input type="text" id="color" name="color" placeholder="Escriba el color del producto">
+            
+            <label for="talla">Talla:</label>
+            <input type="text" id="talla" name="talla" placeholder="Escriba la talla del producto">
+            
+            <label for="material">Material:</label>
+            <input type="text" id="material" name="material" placeholder="Escriba el material del producto">
+            
+            <button type="button" onclick="registrarProducto()">Registrar</button>
+            <button type="button" onclick="limpiarCampos()">Limpiar</button>
+        </form>
+    </main>
+
+            <footer>
+                <div class="container">
+                    <section class="contact-info">
+                        <h3>Contacto</h3>
+                        <ul>
+                            <li>Dirección: Calle 52 #12-54, Cali</li>
+                            <li>Teléfono: 3184081591</li>
+                            <li>Correo electrónico: legendary@gmail.com</li>
+                        </ul>
+                    </section>
+            
+                    <section class="social-media">
+                        <h3>Redes Sociales</h3>
+                        <ul>
+                            <li><a href="https://www.facebook.com/profile.php?id=61557170707273&mibextid=LQQJ4d">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/legendary_shop52cali?igsh=MWg2ZHl1dnI1Z3M2Zw==">Instagram</a></li>
+                            <li><a href="https://wa.me/3184081591">WhatsApp</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
